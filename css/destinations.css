@@ -1,0 +1,74 @@
+.destinations-hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/Cover-destination.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.destinations-hero h1 {
+    color: white;
+}
+
+.destinations-intro {
+    background-color: #f8f9fa;
+}
+
+.destinations-main {
+    background-color: #e9ecef;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.destination-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.destination-card:hover .destination-img {
+    transform: scale(1.05);
+}
+
+.destination-info {
+    padding: 30px;
+}
+
+.destination-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.destination-meta i {
+    color: #f9c74f;
+    margin-right: 5px;
+}
+
+.destination-info .btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+}
